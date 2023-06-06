@@ -129,9 +129,9 @@ def githubCheck(owner, repo, base_commit, head_commit):
 
  # Provide the repository details and commit IDs
 owner = "ssunilas"
-repo = "firstProject"
-base_commit = "b45be35"     #commit ID from
-head_commit = "f1dc2a8"
+repo = "gitTest1"
+base_commit = "a9d133f"     #commit ID from
+head_commit = "9608f24"
 
 # Call the function to get the changed files
 changed_files = githubCheck(owner, repo, base_commit, head_commit)
@@ -139,7 +139,7 @@ changed_files = githubCheck(owner, repo, base_commit, head_commit)
 print("Files changed after the commit:")
 for file in changed_files:
     file_path = f"{owner}/{repo}/{file}"
-    print(file_path)
+    print(file)
 
 
      
